@@ -2,4 +2,4 @@
 
 Minimal site for lit distribution
 
-Started project with  '''npm create vite@4.1.0'''
+Started project with  ```npm create vite@4.1.0```
