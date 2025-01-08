@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Use HashRouter instead of BrowserRouter
 import Navbar from "./components/Navbar";
 import Home from "./Home";
 import Articles from "./Articles";
@@ -13,9 +8,9 @@ import Books from "./Books";
 
 const App = () => {
   return (
-    <Router basename="/lit-distro">
+    <Router>
       {" "}
-      {/* This makes sure routes work from the subdirectory */}
+      {/* Use HashRouter without basename */}
       <Navbar />
       <div
         style={{
@@ -28,7 +23,6 @@ const App = () => {
           <Route path="/articles" element={<Articles />} />
           <Route path="/books" element={<Books />} />
           <Route path="/quicklinks" element={<QuickLinks />} />
-          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
