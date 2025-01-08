@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom"; // Import Link and useLocation from react-router-dom
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
 
   return (
     <nav
@@ -10,21 +10,21 @@ const Navbar = () => {
         backgroundColor: "white",
         color: "white",
         padding: "20px",
-        paddingTop: "37px", // Add padding to the top of the nav
-        height: "100vh", // Ensure the nav takes full height of the viewport
-        position: "fixed", // Make it fixed on the left side
+        paddingTop: "37px",
+        height: "100vh",
+        position: "fixed",
         left: 0,
         top: 0,
-        width: "150px", // You can adjust the width as needed
+        width: "150px",
         display: "flex",
-        flexDirection: "column", // Align items vertically
+        flexDirection: "column",
         borderRight: "2px dotted grey",
       }}
     >
       <ul
         style={{
           display: "flex",
-          flexDirection: "column", // Align items vertically
+          flexDirection: "column",
           listStyleType: "none",
           margin: 0,
           padding: 0,
@@ -38,7 +38,7 @@ const Navbar = () => {
             style={{
               color: location.pathname === "/" ? "black" : "grey",
               textDecoration: "none",
-              fontWeight: location.pathname === "/" ? "bold" : "normal", // Bold if current path is "/"
+              fontWeight: location.pathname === "/" ? "bold" : "normal",
             }}
           >
             Home
@@ -50,7 +50,7 @@ const Navbar = () => {
             style={{
               color: location.pathname === "/articles" ? "black" : "grey",
               textDecoration: "none",
-              fontWeight: location.pathname === "/articles" ? "bold" : "normal", // Bold if current path is "/articles"
+              fontWeight: location.pathname === "/articles" ? "bold" : "normal",
             }}
           >
             Articles
@@ -62,7 +62,7 @@ const Navbar = () => {
             style={{
               color: location.pathname === "/books" ? "black" : "grey",
               textDecoration: "none",
-              fontWeight: location.pathname === "/books" ? "bold" : "normal", // Bold if current path is "/books"
+              fontWeight: location.pathname === "/books" ? "bold" : "normal",
             }}
           >
             Books/Zines
@@ -75,7 +75,7 @@ const Navbar = () => {
               color: location.pathname === "/quicklinks" ? "black" : "grey",
               textDecoration: "none",
               fontWeight:
-                location.pathname === "/quicklinks" ? "bold" : "normal", // Bold if current path is "/quicklinks"
+                location.pathname === "/quicklinks" ? "bold" : "normal",
             }}
           >
             Quick Links

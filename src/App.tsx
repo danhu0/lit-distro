@@ -8,7 +8,9 @@ import Books from "./Books";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/lit-distro">
+      {" "}
+      {/* Set basename to the subdirectory */}
       <Navbar />
       <div
         style={{
@@ -17,7 +19,7 @@ const App = () => {
         }}
       >
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} /> {/* Use "/" for root */}
           <Route path="/articles" element={<Articles />} />
           <Route path="/books" element={<Books />} />
           <Route path="/quicklinks" element={<QuickLinks />} />

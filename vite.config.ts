@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/lit-distro/',  // Replace 'repository-name' with your actual GitHub repository name
+  base: '/lit-distro/',  // Set to the subpath where your app is hosted
 })
