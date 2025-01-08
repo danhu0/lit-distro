@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/lit-distro/',  // Set to the subpath where your app is hosted
+  base: '/lit-distro/',  // Set the base path for GitHub Pages or your subdirectory
+  plugins: [react()]
 })

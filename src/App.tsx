@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./Home";
 import Articles from "./Articles";
@@ -10,7 +15,7 @@ const App = () => {
   return (
     <Router basename="/lit-distro">
       {" "}
-      {/* Set basename to the subdirectory */}
+      {/* This makes sure routes work from the subdirectory */}
       <Navbar />
       <div
         style={{
@@ -19,10 +24,11 @@ const App = () => {
         }}
       >
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Use "/" for root */}
+          <Route path="/" element={<Home />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/books" element={<Books />} />
           <Route path="/quicklinks" element={<QuickLinks />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
