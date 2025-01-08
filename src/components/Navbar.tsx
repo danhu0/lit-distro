@@ -1,68 +1,85 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom"; // Import Link and useLocation from react-router-dom
 
 const Navbar = () => {
-  // State to toggle the dropdown visibility
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  // Toggle the dropdown menu
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
+  const location = useLocation(); // Get the current location
 
   return (
-    <nav style={{ backgroundColor: "#333", padding: "10px", color: "white" }}>
+    <nav
+      style={{
+        backgroundColor: "white",
+        color: "white",
+        padding: "20px",
+        paddingTop: "37px", // Add padding to the top of the nav
+        height: "100vh", // Ensure the nav takes full height of the viewport
+        position: "fixed", // Make it fixed on the left side
+        left: 0,
+        top: 0,
+        width: "150px", // You can adjust the width as needed
+        display: "flex",
+        flexDirection: "column", // Align items vertically
+        borderRight: "2px dotted grey",
+      }}
+    >
       <ul
         style={{
           display: "flex",
+          flexDirection: "column", // Align items vertically
           listStyleType: "none",
           margin: 0,
           padding: 0,
+          alignItems: "flex-end",
+          fontStyle: "italic",
         }}
       >
-        <li style={{ margin: "0 15px" }}>
-          <a href="/" style={{ color: "white", textDecoration: "none" }}>
-            Home
-          </a>
-        </li>
-        <li style={{ margin: "0 15px" }}>
-          <a
-            href="/articles"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Articles
-          </a>
-        </li>
-        {/* Quick Links Dropdown Section */}
-        <li style={{ margin: "0 15px" }} onClick={toggleDropdown}>
-          <span
-            style={{ color: "white", fontWeight: "bold", cursor: "pointer" }}
-          >
-            Quick Links
-          </span>
-          <div
+        <li style={{ margin: "5px 0" }}>
+          <Link
+            to="/"
             style={{
-              display: dropdownOpen ? "block" : "none",
-              position: "absolute",
-              backgroundColor: "#444",
-              padding: "10px",
-              marginTop: "5px",
-              borderRadius: "5px",
-              zIndex: 1,
+              color: location.pathname === "/" ? "black" : "grey",
+              textDecoration: "none",
+              fontWeight: location.pathname === "/" ? "bold" : "normal", // Bold if current path is "/"
             }}
           >
-            <ul style={{ listStyleType: "none", margin: 0, padding: 0 }}>
-              <li style={{ margin: "5px 0" }}>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: "white", textDecoration: "none" }}
-                >
-                  Instagram
-                </a>
-              </li>
-            </ul>
-          </div>
+            Home
+          </Link>
+        </li>
+        <li style={{ margin: "5px 0" }}>
+          <Link
+            to="/articles"
+            style={{
+              color: location.pathname === "/articles" ? "black" : "grey",
+              textDecoration: "none",
+              fontWeight: location.pathname === "/articles" ? "bold" : "normal", // Bold if current path is "/articles"
+            }}
+          >
+            Articles
+          </Link>
+        </li>
+        <li style={{ margin: "5px 0" }}>
+          <Link
+            to="/books"
+            style={{
+              color: location.pathname === "/books" ? "black" : "grey",
+              textDecoration: "none",
+              fontWeight: location.pathname === "/books" ? "bold" : "normal", // Bold if current path is "/books"
+            }}
+          >
+            Books/Zines
+          </Link>
+        </li>
+        <li style={{ margin: "5px 0" }}>
+          <Link
+            to="/quicklinks"
+            style={{
+              color: location.pathname === "/quicklinks" ? "black" : "grey",
+              textDecoration: "none",
+              fontWeight:
+                location.pathname === "/quicklinks" ? "bold" : "normal", // Bold if current path is "/quicklinks"
+            }}
+          >
+            Quick Links
+          </Link>
         </li>
       </ul>
     </nav>

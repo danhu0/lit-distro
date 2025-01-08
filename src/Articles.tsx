@@ -1,9 +1,5 @@
 const Articles = () => {
-  return (
-    <div>
-      <h1>Articles Page</h1>
-    </div>
-  );
+  return <div>Articles Page</div>;
 };
 
 export default Articles;
