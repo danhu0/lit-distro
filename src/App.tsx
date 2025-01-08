@@ -17,7 +17,7 @@ const App = () => {
         }}
       >
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/books" element={<Books />} />
           <Route path="/quicklinks" element={<QuickLinks />} />
