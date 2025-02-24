@@ -44,43 +44,6 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li style={{ margin: "5px 0" }}>
-          <Link
-            to="/articles"
-            style={{
-              color: location.pathname === "/articles" ? "black" : "grey",
-              textDecoration: "none",
-              fontWeight: location.pathname === "/articles" ? "bold" : "normal",
-            }}
-          >
-            Articles
-          </Link>
-        </li>
-        <li style={{ margin: "5px 0" }}>
-          <Link
-            to="/books"
-            style={{
-              color: location.pathname === "/books" ? "black" : "grey",
-              textDecoration: "none",
-              fontWeight: location.pathname === "/books" ? "bold" : "normal",
-            }}
-          >
-            Books/Zines
-          </Link>
-        </li>
-        <li style={{ margin: "5px 0" }}>
-          <Link
-            to="/quicklinks"
-            style={{
-              color: location.pathname === "/quicklinks" ? "black" : "grey",
-              textDecoration: "none",
-              fontWeight:
-                location.pathname === "/quicklinks" ? "bold" : "normal",
-            }}
-          >
-            Quick Links
-          </Link>
-        </li>
       </ul>
     </nav>
   );
