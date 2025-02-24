@@ -2,8 +2,7 @@ import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Use HashRouter instead of BrowserRouter
 import Navbar from "./components/Navbar";
 import Home from "./Home";
-import Articles from "./Articles";
-import QuickLinks from "./QuickLinks";
+import Article1 from "./articles/Article1";
 import Books from "./Books";
 
 const App = () => {
@@ -20,9 +19,7 @@ const App = () => {
       >
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/books" element={<Books />} />
-          <Route path="/quicklinks" element={<QuickLinks />} />
+          <Route path="/article1" element={<Article1 />} />
         </Routes>
       </div>
     </Router>

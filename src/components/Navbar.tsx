@@ -41,7 +41,19 @@ const Navbar = () => {
               fontWeight: location.pathname === "/" ? "bold" : "normal",
             }}
           >
-            Home
+            what's this?
+          </Link>
+        </li>
+        <li style={{ margin: "5px 0" }}>
+          <Link
+            to="/article1"
+            style={{
+              color: location.pathname === "/article1" ? "black" : "grey",
+              textDecoration: "none",
+              fontWeight: location.pathname === "/article1" ? "bold" : "normal",
+            }}
+          >
+            02/23/2025
           </Link>
         </li>
       </ul>
