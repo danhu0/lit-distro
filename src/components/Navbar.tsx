@@ -1,5 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
+
+const links = [
+  { path: "/", label: "to understand mariátegui" },
+  { path: "/article2", label: "let us orient ourselves" },
+  { path: "/article1", label: "?" },
+  // You can easily add more here
+];
 
 const Navbar = () => {
   const location = useLocation();
@@ -8,14 +15,13 @@ const Navbar = () => {
     <nav
       style={{
         backgroundColor: "white",
-        color: "white",
         padding: "20px",
         paddingTop: "37px",
         height: "100vh",
         position: "fixed",
         left: 0,
         top: 0,
-        width: "150px",
+        width: "250px",
         display: "flex",
         flexDirection: "column",
         borderRight: "2px dotted grey",
@@ -32,30 +38,20 @@ const Navbar = () => {
           fontStyle: "italic",
         }}
       >
-        <li style={{ margin: "5px 0" }}>
-          <Link
-            to="/"
-            style={{
-              color: location.pathname === "/" ? "black" : "grey",
-              textDecoration: "none",
-              fontWeight: location.pathname === "/" ? "bold" : "normal",
-            }}
-          >
-            what's this?
-          </Link>
-        </li>
-        <li style={{ margin: "5px 0" }}>
-          <Link
-            to="/article1"
-            style={{
-              color: location.pathname === "/article1" ? "black" : "grey",
-              textDecoration: "none",
-              fontWeight: location.pathname === "/article1" ? "bold" : "normal",
-            }}
-          >
-            02/23/2025
-          </Link>
-        </li>
+        {links.map(({ path, label }) => (
+          <li key={path} style={{ margin: "5px 0" }}>
+            <Link
+              to={path}
+              style={{
+                color: location.pathname === path ? "black" : "grey",
+                textDecoration: "none",
+                fontWeight: location.pathname === path ? "bold" : "normal",
+              }}
+            >
+              {label}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
