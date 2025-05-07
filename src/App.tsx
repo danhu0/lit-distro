@@ -3,7 +3,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Use H
 import Navbar from "./components/Navbar";
 import Home from "./Home";
 import Article1 from "./articles/Article1";
-import Article2 from "./articles/Article2";
+import Article2 from "../public/Article2";
 import Books from "./Books";
 
 const App = () => {
