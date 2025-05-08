@@ -38,15 +38,15 @@ const Article2 = () => {
         </div>
         <div style={{ flex: 1 }}>
           <img
-            src="public/guzmanfig.png"
+            src="/guzmanfig.png"
             style={{ maxWidth: "80%", height: "auto" }}
           />
           <img
-            src="public/interviewfig.png"
+            src="/interviewfig.png"
             style={{ maxWidth: "80%", height: "auto" }}
           />
           <img
-            src="public/mariafig.png"
+            src="/mariafig.png"
             style={{ maxWidth: "80%", height: "auto" }}
           />
         </div>
