@@ -3,8 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 
 const links = [
   { path: "/", label: "to understand mariátegui" },
-  { path: "/article2", label: "let us orient ourselves" },
-  { path: "/article1", label: "?" },
+  { path: "/article4", label: "let us orient ourselves" },
+  { path: "/article2", label: "let us disorient ourselves" },
+  { path: "/article1", label: "the compromised image" },
   // You can easily add more here
 ];
 

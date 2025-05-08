@@ -9,14 +9,14 @@ const Home = () => {
       <div style={{ display: "flex", fontSize: 14 }}>
         <div style={{ paddingLeft: 50, marginRight: 40, flex: 1 }}>
           <p>
-            In 1928, José Carlos Mariátegui wrote a book. The book was titled
-            simply: <i>Seven Interpretive Essays on Peruvian Reality.</i>{" "}
-            Mariáteguistas have puzzled over Peruvian reality ever since.
+            In 1928, José Carlos Mariátegui wrote a book. The book was titled:{" "}
+            <i>Seven Interpretive Essays on Peruvian Reality.</i> Mariáteguistas
+            have puzzled over Peruvian reality ever since.
           </p>
           <p>
             In either 1968 or 1969, Abimael Guzmán, chairman of the Shining
             Path, gave a lecture at the Universidad Nacional de San Cristóbal de
-            Huamanga in Ayachucho. The lecture was titled simply:{" "}
+            Huamanga in Ayachucho. The lecture was titled:{" "}
             <i>To Understand Mariátegui</i>.
           </p>
           <p>Guzmán says:</p>
@@ -28,7 +28,7 @@ const Home = () => {
           </p>
           <p>
             In 2016, shane (mariáte)greene, punk anthropologist, wrote a book
-            published by Duke University Press. The book was titled simply:{" "}
+            published by Duke University Press. The book was titled:{" "}
             <i>
               punk and revolution: 7 more interpretations of peruvian reality
             </i>
@@ -37,9 +37,9 @@ const Home = () => {
           <p>(mariáte)greene says:</p>
           <p>"Thanks go to the ghost of Mariátegui for putting up with me."</p>
           <p>
-            I want to take this space to think about ghosts. Here, I want to
-            think about inheritance of the intellect. Think: Mariátegui. Let us
-            talk methodology.
+            So: I want to take this space to think about ghosts. The ghost of
+            Mariátegui, still bound to his wheelchair, still righteous and
+            angry, still interpreting Peruvian reality.
           </p>
           <p>
             Let it be known that I will respect the page. By that I mean that
