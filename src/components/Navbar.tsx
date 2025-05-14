@@ -6,7 +6,10 @@ const links = [
   { path: "/article4", label: "let us orient ourselves" },
   { path: "/article2", label: "let us disorient ourselves" },
   { path: "/article1", label: "the compromised image" },
-  // You can easily add more here
+  { path: "/article5", label: "compress and expand" },
+  { path: "/article6", label: "transpacific revolution" },
+  { path: "/article7", label: "dogsbody" },
+  { path: "/article8", label: "reconstitute the image!" },
 ];
 
 const Navbar = () => {

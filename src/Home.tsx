@@ -21,10 +21,12 @@ const Home = () => {
           </p>
           <p>Guzmán says:</p>
           <p>
-            “There is not in all of Latin America another Marxist-Leninist
-            comparable to him in any way; truly José Carlos Mariátegui is a
-            summit of Latin-American Marxism thought and a greater summit as
-            time goes on.”
+            <span style={{ color: "red" }}>
+              “There is not in all of Latin America another Marxist-Leninist
+              comparable to him in any way; truly José Carlos Mariátegui is a
+              summit of Latin-American Marxism thought and a greater summit as
+              time goes on.”
+            </span>
           </p>
           <p>
             In 2016, shane (mariáte)greene, punk anthropologist, wrote a book
@@ -69,18 +71,20 @@ const Home = () => {
 
         <div style={{ paddingLeft: 50, flex: 1 }}>
           <p>
-            "Scientific and technological developments are products of the
-            transformative action of the proletariat and the people. But the
-            financial oligarchy, the grand bourgeois, imperialism appropriate
-            them. They are their private property, of the monopolies and
-            instruments of exploitation. In the shadow of this has developed a
-            layer of scum of technocrats, who craftily try, making noises aimed
-            at the working class, and especially at petit bourgeois
-            intellectuals, to substitute a false revolution, with a different
-            path, without the class struggle. However, only with real revolution
-            can science and technology fulfill their potential. Because only
-            with revolution will their full productivity be realized, and their
-            benefits reach the workers and the poor."
+            <span style={{ color: "red" }}>
+              "Scientific and technological developments are products of the
+              transformative action of the proletariat and the people. But the
+              financial oligarchy, the grand bourgeois, imperialism appropriate
+              them. They are their private property, of the monopolies and
+              instruments of exploitation. In the shadow of this has developed a
+              layer of scum of technocrats, who craftily try, making noises
+              aimed at the working class, and especially at petit bourgeois
+              intellectuals, to substitute a false revolution, with a different
+              path, without the class struggle. However, only with real
+              revolution can science and technology fulfill their potential.
+              Because only with revolution will their full productivity be
+              realized, and their benefits reach the workers and the poor."
+            </span>
           </p>
           <p>
             This project will have all the markings of my positionality. This
@@ -89,11 +93,14 @@ const Home = () => {
             project is a product of technology. This project will be entirely
             open source. This project will use its status of being open source
             to participate in a larger project of wresting the locus of
-            technological power away from "the finanical oligarchy, the grand
-            bourgeois, imperialism." This project will try. This project will
-            talk about revolution. This project is about revolution but not of
-            it, per Guzmán. This project will interpret Peruvian reality, if
-            only the thinnest slice of it, seen through the tiniest pinhole.
+            technological power away from{" "}
+            <span style={{ color: "red" }}>
+              "the finanical oligarchy, the grand bourgeois, imperialism."{" "}
+            </span>{" "}
+            This project will try. This project will talk about revolution. This
+            project is about revolution but not of it, per Guzmán. This project
+            will interpret Peruvian reality, if only the thinnest slice of it,
+            seen through the tiniest pinhole.
           </p>
           <p>
             I will read the Shining Path's material. I will read what Mariátegui

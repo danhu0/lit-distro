@@ -5,7 +5,7 @@ const Article4 = () => {
       <div style={{ display: "flex" }}>
         <div style={{ paddingLeft: 50, marginRight: 40, flex: 1 }}>
           <img
-            src="public/maria0.jpg"
+            src="maria0.jpg"
             style={{ maxWidth: "104%", maxHeight: "auto" }}
           />
         </div>
@@ -37,9 +37,13 @@ const Article4 = () => {
           </p>
           <p>
             For the Shining Path, the most ardently Mariáteguista solution is
-            then very simple. “The problem of the Peruvian peasant is the
-            problem of the land, and the problem of the land is summarized by
-            how to conquer that land," says Guzmán.
+            then very simple.{" "}
+            <span style={{ color: "red" }}>
+              “The problem of the Peruvian peasant is the problem of the land,
+              and the problem of the land is summarized by how to conquer that
+              land,"
+            </span>{" "}
+            says Guzmán.
           </p>
           <p>
             We will think about Mariátegui and we will think about the Shining,
@@ -59,7 +63,8 @@ const Article4 = () => {
             path of fantasy. Mariátegui said this.
           </p>
           <p>
-            Finally, a word of caution from the master of interpreting reality:
+            Finally, a word of caution, again from the master of interpreting
+            reality:
           </p>
           <p>
             "But fiction is not free. More than unveil for us the marvelous (lo
