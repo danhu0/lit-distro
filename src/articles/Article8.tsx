@@ -25,16 +25,17 @@ const Article8 = () => {
             tons of earth. Hundreds of trucks deliver this earth back to the
             Yanacocha gold mine, this open-pit mine, this enormous and deep scar
             in the land. Miraculously, the earth from the trucks is shoveled out
-            back into the land. The earth heals. Reverse-raindrops drip upwards.
+            back into the land. Dynamite unexplodes. The earth heals. Today is a
+            rainy day. Reverse-raindrops drip upwards to heaven.
           </p>
           <p>
             All throughout the Shining Path’s existence, the enganche system was
             being covertly employed. This was a system of indentured labor,
             wherein largely indigenous rural peasants were paid a lump sum
-            upfront, which they would then pay off as a debt with interest with
-            back-breaking work in the mines. Work was dangerous, and somehow
-            workers would end their indentured period with even more debt than
-            when they started.
+            upfront, which they would then pay off as a debt (with skyrocketing
+            interest) with back-breaking work in the mines. Work was dangerous,
+            and somehow workers would end their indentured period with even more
+            debt than when they started.
           </p>
         </div>
         <div style={{ flex: 1 }}>
